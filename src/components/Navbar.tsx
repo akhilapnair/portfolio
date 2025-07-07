@@ -50,7 +50,7 @@ const Navbar = () => {
   const closeMenu = () => setOpen(false);
 
   return (
-    <nav className="flex items-center justify-between px-5 py-4  text-white relative z-10">
+    <nav className="fixed  flex items-center justify-between px-5 py-4  text-white relative z-10">
       <div className="flex items-center gap-2">
         <div className="mb-8 transition duration-300 text-white hover:text-oceanSky">
           <APIcon size={60} color="#ffffff" />

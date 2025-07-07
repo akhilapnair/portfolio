@@ -11,8 +11,8 @@ const App = () => {
           <ParticleBackground />
         </div>
         <Navbar />
-        <main className="relative z-10 flex h-screen ">
-          <section className="w-screen min-h-screen flex flex-col  px-6 py-10 text-white text-center">
+        <main className="relative z-10 flex min-h-[calc(100vh-124px)] ">
+          <section className=" flex flex-col  px-6 text-white text-center">
             <Intro />
           </section>
         </main>

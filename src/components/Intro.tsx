@@ -37,7 +37,7 @@ export default function WipeText() {
 
   return (
     <>
-      <header className="flex flex-col items-center justify-center h-[calc(100vh-64px)] px-4 text-center">
+      <header className="flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl">
         <h1
           className="text-sm uppercase tracking-wide font-semibold text-gray-300 mb-4 name"
           id="intro-title"
@@ -46,7 +46,7 @@ export default function WipeText() {
           <span>
             <span
               aria-hidden="true"
-              className="flex justify-start gap-0.5 text-lightgrey"
+              className="flex justify-start text-2xl gap-0.5 text-lightgrey"
             >
               {"Akhila  Prabhakarn  Nair".split("").map((char, idx) => (
                 <span key={idx}>{char}</span>
@@ -54,17 +54,17 @@ export default function WipeText() {
             </span>
           </span>
         </h1>
-         <h2 className="text-7xl sm:text-8xl font-extrabold leading-tight">
-          <div className="flex items-center gap-4 flex-wrap justify-center">
-            <span>FRONTEND</span>
-            <span className="h-px bg-gray-600 flex-1 min-w-[50px] hidden sm:block"></span>
+         <h2 className="text-5xl sm:text-8xl font-extrabold leading-tight">
+          <div className="flex items-center gap-4 flex-wrap justify-center w-full">
+            <span>Frontend</span>
+            <span className="h-px bg-gray-600 flex-1 min-w-[200px] hidden sm:block"></span>
           </div>
            <div className="relative w-fit overflow-hidden mt-3">
       <span
         ref={wipeRef}
         className="absolute inset-0 bg-oceanSky z-10"
       ></span>
-      <div className="flex items-center gap-3 sm:gap-4 justify-center relative z-20 px-4 py-1 text-5xl sm:text-6xl font-bold">
+      <div className="flex items-center gap-3 sm:gap-4 justify-center relative px-4 py-1 text-5xl sm:text-6xl font-bold">
         <span className="text-gray-500">+</span>
         <span className="text-white">{roles[index]}</span>
       </div>

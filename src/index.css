@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --background: 18 18 18;
+    --text-body: 17 24 39;
+  }
+
   body {
-    @apply bg-gray-100 text-gray-900;
+    @apply text-[rgb(var(--text-body))] bg-[rgb(var(--background))];
   }
 }
 @layer components {

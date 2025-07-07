@@ -19,12 +19,12 @@ const Menu = ({ close: any }) => (
     exit="exit"
     transition={{ duration: 0.3 }}
     style={{
+          backgroundColor: `color-mix(in lab, rgb(var(--background)) 70%, transparent)`,
       position: "fixed",
       top: 0,
       right: 0,
       width: "250px",
       height: "100vh",
-      background: "#111",
       color: "#fff",
       padding: "2rem",
       zIndex: 1000,
@@ -50,7 +50,7 @@ const Navbar = () => {
   const closeMenu = () => setOpen(false);
 
   return (
-    <nav className="flex items-center justify-between px-5 py-4 bg-zinc-950 text-white relative z-10">
+    <nav className="flex items-center justify-between px-5 py-4  text-white relative z-10">
       <div className="flex items-center gap-2">
         <div className="mb-8 transition duration-300 text-white hover:text-oceanSky">
           <APIcon size={60} color="#ffffff" />

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 18 18 18;
+    --text-body: 17 24 39;
+  }
+
+  body {
+    @apply text-[rgb(var(--text-body))] bg-[rgb(var(--background))];
+  }
+}
+@layer components {
+  .name {
+    text-transform: uppercase;
+    font-size: calc((24 / 16) * 1rem);
+    letter-spacing: 0.3em;
+  }
+}

@@ -50,7 +50,7 @@ const Navbar = () => {
   const closeMenu = () => setOpen(false);
 
   return (
-    <nav className="fixed  flex items-center justify-between px-5 py-4  text-white relative z-10">
+    <nav className="fixed  flex items-center justify-between px-14 py-10  text-white relative z-10">
       <div className="flex items-center gap-2">
         <div className="mb-8 transition duration-300 text-white hover:text-oceanSky">
           <APIcon size={60} color="#ffffff" />
@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
 
       <button
-        className={cn("group size-12 absolute top-5 right-5 md:right-10 z-[2]")}
+        className={cn("group size-12 absolute top-8 right-6 md:right-10 z-[2]")}
         onClick={() => setOpen(!open)}
       >
         <span

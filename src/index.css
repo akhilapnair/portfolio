@@ -4,12 +4,14 @@
 
 @layer base {
   :root {
-    --background: 18 18 18;
+    --background: oklch(17.76% 0 0);
+    --background-light: oklch(21.78% 0 0);
     --text-body: 17 24 39;
+
   }
 
   body {
-    @apply text-[rgb(var(--text-body))] bg-[rgb(var(--background))];
+    @apply text-[rgb(var(--text-body))] bg-[rgb(var(--background))] font-sans;
   }
 }
 @layer components {

@@ -20,4 +20,10 @@
     font-size: calc((24 / 16) * 1rem);
     letter-spacing: 0.3em;
   }
+  .title-text {
+    @apply flex items-center gap-4 justify-center w-full;
+  }
+  .title-sub{
+    @apply relative w-fit overflow-hidden mt-3
+  }
 }

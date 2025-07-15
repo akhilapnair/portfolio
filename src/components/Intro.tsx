@@ -2,13 +2,24 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
 import DecoderName from "./Decoder-text";
-
+import { useGSAP } from "@gsap/react";
 const roles = ["Developer", "Designer", "Creator"];
 
 export default function WipeText() {
   const [index, setIndex] = useState(0);
   const wipeRef = useRef(null);
   const nameRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      ".title-text, .title-sub",
+      {
+        y: 50,
+        opacity: 0,
+      },
+      { y: 0, opacity: 1, stagger: 0.2, duration: 5, ease: "power2.out" }
+    );
+  });
 
   useEffect(() => {
     gsap.set(nameRef.current, { opacity: 0 });
@@ -45,11 +56,11 @@ export default function WipeText() {
         <DecoderName text="Akhila Prabhakarn Nair" className="text-gray-300" />
 
         <h2 className="text-5xl sm:text-8xl font-extrabold leading-tight">
-          <div className="flex items-center gap-4  justify-center w-full">
+          <div className="title-text">
             <span>Frontend</span>
             <span className="h-px min-w-[300px] bg-oceanSky flex-1 "></span>
           </div>
-          <div className="relative w-fit overflow-hidden mt-3">
+          <div className="title-sub">
             <span
               ref={wipeRef}
               className="absolute inset-0 bg-oceanSky z-10"

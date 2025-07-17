@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
-import DecoderName from "./Decoder-text";
+import DecoderName from "../components/Decoder-text";
 import { useGSAP } from "@gsap/react";
 const roles = ["Developer", "Designer", "Creator"];
 
@@ -17,7 +17,7 @@ export default function WipeText() {
         y: 50,
         opacity: 0,
       },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 5, ease: "power2.out" }
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.out" }
     );
   });
 
@@ -52,7 +52,7 @@ export default function WipeText() {
 
   return (
     <>
-      <header className="flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl">
+      <header className=" flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl">
         <DecoderName text="Akhila Prabhakarn Nair" className="text-gray-300" />
 
         <h2 className="text-5xl sm:text-8xl font-extrabold leading-tight">

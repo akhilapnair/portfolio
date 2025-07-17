@@ -7,7 +7,6 @@
     --background: oklch(17.76% 0 0);
     --background-light: oklch(21.78% 0 0);
     --text-body: 17 24 39;
-
   }
 
   body {
@@ -23,7 +22,16 @@
   .title-text {
     @apply flex items-center gap-4 justify-center w-full;
   }
-  .title-sub{
-    @apply relative w-fit overflow-hidden mt-3
+  .title-sub {
+    @apply relative w-fit overflow-hidden mt-3;
+  }
+  .section-padding {
+    @apply px-5 md:px-10 md:mt-40 mt-20;
+  }
+    .user-badge {
+    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+  }
+    .exp-card-wrapper {
+    @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
   }
 }

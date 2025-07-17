@@ -1,7 +1,8 @@
-import APIcon from "./components/APIcon";
-import Intro from "./components/Intro";
+import Intro from "./section/Intro";
 import Navbar from "./components/Navbar";
 import ParticleBackground from "./components/Particle-animation";
+import Aboutme from "./section/Aboutme";
+import Experience from "./section/Experience";
 
 const App = () => {
   return (
@@ -11,9 +12,11 @@ const App = () => {
           <ParticleBackground />
         </div>
         <Navbar />
-        <main className="relative z-10 flex min-h-[calc(100vh-124px)] ">
-          <section className=" flex flex-col  px-6 text-white text-center">
+        <main className="relative pt-10 z-10 flex min-h-[calc(100vh-18s0px)] ">
+          <section className=" w-[780px]flex flex-col  px-6 text-white text-center">
             <Intro />
+            <Aboutme />
+            <Experience />
           </section>
         </main>
       </div>

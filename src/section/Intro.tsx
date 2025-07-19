@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { motion } from "framer-motion";
 import DecoderName from "../components/Decoder-text";
 import { useGSAP } from "@gsap/react";
+import ArrowAnimation from "../components/ArrowAnimation";
 const roles = ["Developer", "Designer", "Creator"];
 
 export default function WipeText() {
@@ -53,6 +54,8 @@ export default function WipeText() {
   return (
     <>
       <header className=" flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl">
+                    <ArrowAnimation />
+
         <DecoderName text="Akhila Prabhakarn Nair" className="text-gray-300" />
 
         <h2 className="text-5xl sm:text-8xl font-extrabold leading-tight">

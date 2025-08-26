@@ -52,29 +52,34 @@ export default function WipeText() {
   }, [index]);
 
   return (
-    <>
-      <header className=" flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl">
-                    <ArrowAnimation />
+    <section className="relative overflow-hidden  min-h-[450px]" id="banner">
+        <ArrowAnimation />
+      <header className=" flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl ">
+      <div className="min-h-[450px]">
+   <DecoderName
+            text="Akhila Prabhakarn Nair"
+            className="text-gray-300"
+          />
 
-        <DecoderName text="Akhila Prabhakarn Nair" className="text-gray-300" />
-
-        <h2 className="text-5xl sm:text-8xl font-extrabold leading-tight">
-          <div className="title-text">
-            <span>Frontend</span>
-            <span className="h-px min-w-[300px] bg-oceanSky flex-1 "></span>
-          </div>
-          <div className="title-sub">
-            <span
-              ref={wipeRef}
-              className="absolute inset-0 bg-oceanSky z-10"
-            ></span>
-            <div className="flex items-center gap-3 sm:gap-4 justify-center relative px-4 py-1 text-5xl sm:text-6xl font-bold">
-              <span className="text-gray-500">+</span>
-              <span className="text-white">{roles[index]}</span>
+          <h2 className="text-5xl sm:text-8xl font-extrabold leading-tight">
+            <div className="title-text">
+              <span>Frontend</span>
+              <span className="h-px min-w-[300px] bg-oceanSky flex-1 "></span>
             </div>
-          </div>
-        </h2>
+            <div className="title-sub">
+              <span
+                ref={wipeRef}
+                className="absolute inset-0 bg-oceanSky z-10"
+              ></span>
+              <div className="flex items-center gap-3 sm:gap-4 justify-center relative px-4 py-1 text-5xl sm:text-6xl font-bold">
+                <span className="text-gray-500">+</span>
+                <span className="text-white">{roles[index]}</span>
+              </div>
+            </div>
+          </h2>
+      </div>
+       
       </header>
-    </>
+    </section>
   );
 }

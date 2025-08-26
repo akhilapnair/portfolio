@@ -1,7 +1,7 @@
 const TitleHeader = ({ title, sub }:{ title: string; sub?: string }) => {
   return (
     <div className="flex flex-col items-center gap-5">
-      <div className="hero-badge">
+      <div className="exp-badge">
         <p>{sub}</p>
       </div>
       <div>

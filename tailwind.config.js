@@ -6,7 +6,8 @@ export default {
       colors: {
         oceanSky: "oklch(84.42% 0.19 202.24)",
         lightgrey: "color-mix(in lab, var(--text) 60%, transparent)",
-
+        'black-50':"#1c1c21", 
+        'black-100':"#282732"
       },
       fontFamily: {
         sans: [

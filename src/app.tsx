@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import ParticleBackground from "./components/Particle-animation";
 import Aboutme from "./section/Aboutme";
 import Experience from "./section/Experience";
+import Skills from "./section/skills";
 
 const App = () => {
   return (
@@ -12,13 +13,14 @@ const App = () => {
           <ParticleBackground />
         </div>
         <Navbar />
-        <main className="relative pt-10 z-10 flex min-h-[calc(100vh-18s0px)] ">
+        {/* <main className="relative pt-10 z-10 flex min-h-[calc(100vh-180px)] "> */}
           <section className=" w-[780px]flex flex-col  px-6 text-white text-center">
             <Intro />
             <Aboutme />
             <Experience />
+            <Skills />
           </section>
-        </main>
+        {/* </main> */}
       </div>
   );
 };

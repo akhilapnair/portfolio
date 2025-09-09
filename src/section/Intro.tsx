@@ -23,7 +23,7 @@ export default function WipeText() {
   });
 
   useEffect(() => {
-    gsap.set(nameRef.current, { opacity: 0 });
+    gsap.set(nameRef.current, { opacity: 0, y: 20 });
 
     gsap.set(wipeRef.current, { xPercent: -100 });
     const tl = gsap.timeline({
@@ -41,6 +41,16 @@ export default function WipeText() {
       duration: 1.0,
       ease: "power2.out",
     });
+    tl.to(
+      nameRef.current,
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: "power2.out",
+      },
+      "-=0.5"
+    );
 
     // Wipe out
     tl.to(wipeRef.current, {
@@ -53,10 +63,10 @@ export default function WipeText() {
 
   return (
     <section className="relative overflow-hidden  min-h-[450px]" id="banner">
-        <ArrowAnimation />
+      <ArrowAnimation />
       <header className=" flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl ">
-      <div className="min-h-[450px]">
-   <DecoderName
+        <div className="min-h-[450px]">
+          <DecoderName
             text="Akhila Prabhakarn Nair"
             className="text-gray-300"
           />
@@ -73,12 +83,13 @@ export default function WipeText() {
               ></span>
               <div className="flex items-center gap-3 sm:gap-4 justify-center relative px-4 py-1 text-5xl sm:text-6xl font-bold">
                 <span className="text-gray-500">+</span>
-                <span className="text-white">{roles[index]}</span>
+                <span ref={nameRef} className="text-white">
+                  {roles[index]}
+                </span>
               </div>
             </div>
           </h2>
-      </div>
-       
+        </div>
       </header>
     </section>
   );

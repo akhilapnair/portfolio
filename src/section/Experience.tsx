@@ -6,6 +6,7 @@ import TitleHeader from "../components/TitleHeader";
 import { expCards } from "../constants";
 import GlowCard from "../components/GlowCard";
 import type { ExperienceCard } from "../types/Experience-card";
+import SectionTitle from "../components/SectionTitle";
 
 const Experience = () => {
   useGSAP(() => {
@@ -56,10 +57,12 @@ const Experience = () => {
       className="w-full md:mt-4o mt-20 scetion-padding xl:px-0"
     >
       <div className=" w-full h-full md:px-20 px-5">
-        <TitleHeader
+        {/* <TitleHeader
           title="Professional Work Experience"
           sub="💼 My Career Overview"
-        />
+        /> */}
+                <SectionTitle title="My Career Overview" />
+
         <div className="mt-32 relative">
           <div className="mt-32 relative">
             <div className="relative z-50 xl:space-y-32 space-y-10">

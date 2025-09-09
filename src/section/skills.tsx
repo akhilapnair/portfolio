@@ -60,19 +60,9 @@ const Skills = () => {
     <section id="my-stack" ref={containerRef}>
       <div className="container">
         <SectionTitle title="My Stack" />
-
-        <div className="space-y-20">
-          {Object.entries(MY_STACK).map(([key, value]) => (
-            <div className="grid sm:grid-cols-12" key={key}>
-              <div className="sm:col-span-5">
-                <p className="slide-up text-5xl font-anton leading-none text-muted-foreground uppercase">
-                  {key}
-                </p>
-              </div>
-
-              <div className="sm:col-span-7 flex gap-x-11 gap-y-9 flex-wrap">
-                {value.map((item) => (
-                  <div
+        <div className="w-full flex flex-row flex-wrap justify-between items-center gap-8">
+          {Object.values(MY_STACK).flat().map((item) => (
+               <div
                     className="slide-up flex gap-3.5 items-center leading-none"
                     key={item.name}
                   >
@@ -87,9 +77,6 @@ const Skills = () => {
                     </div>
                     <span className="text-2xl capitalize">{item.name}</span>
                   </div>
-                ))}
-              </div>
-            </div>
           ))}
         </div>
       </div>

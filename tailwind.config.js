@@ -6,8 +6,8 @@ export default {
       colors: {
         oceanSky: "oklch(84.42% 0.19 202.24)",
         lightgrey: "color-mix(in lab, var(--text) 60%, transparent)",
-        'black-50':"#1c1c21", 
-        'black-100':"#282732"
+        "black-50": "#1c1c21",
+        "black-100": "#282732",
       },
       fontFamily: {
         sans: [
@@ -20,6 +20,14 @@ export default {
           '"Helvetica Neue"',
           "sans-serif",
         ],
+      },
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          xl: "1148px",
+          "2xl": "1148px",
+        },
       },
       keyframes: {
         "slide-in": {
@@ -35,7 +43,6 @@ export default {
         "slide-in": "slide-in 0.6s forwards ease-in-out",
         "fade-in": "fade-in 0.4s forwards ease-in-out",
       },
-     
     },
   },
   plugins: [],

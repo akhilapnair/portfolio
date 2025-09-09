@@ -49,7 +49,7 @@
   }
 
   .timeline-logo {
-    @apply md:w-10 md:h-10 w-5 h-5 flex-none rounded-full flex justify-center items-center  md:-translate-y-7 border border-black-50 bg-black-100; 
+    @apply md:w-12 md:h-12 w-14 h-14 flex-none rounded-full flex justify-center items-center  md:-translate-y-7 border border-black-50 bg-black-100; 
   }
 
 }

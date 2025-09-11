@@ -4,6 +4,7 @@ import ParticleBackground from "./components/Particle-animation";
 import Aboutme from "./section/Aboutme";
 import Experience from "./section/Experience";
 import Skills from "./section/skills";
+import Contact from "./section/contact";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Aboutme />
             <Experience />
             <Skills />
+            <Contact />
           </section>
         {/* </main> */}
       </div>

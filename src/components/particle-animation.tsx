@@ -30,7 +30,7 @@ const ParticleBackground = () => {
     }, []);
 
     return (
-        <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="fixed inset-0 z-10 pointer-events-none">
             {[...Array(100)].map((_, i) => (
                 <div
                     key={i}

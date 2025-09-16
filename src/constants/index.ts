@@ -6,7 +6,7 @@ const expCards: ExperienceCard[] = [
     imgPath: "/images/exp2.png",
     logoPath: "/images/gattyI_logo.jpg",
     title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    date: "December 2023 - May 2024",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
       "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
@@ -19,7 +19,7 @@ const expCards: ExperienceCard[] = [
     imgPath: "/images/.jpg",
     logoPath: "/images/IBS_Logo.jpg",
     title: "Software Developer",
-    date: "June 2020 - December 2023",
+    date: "December 2021 - August 2024",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
       "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
@@ -32,7 +32,7 @@ const expCards: ExperienceCard[] = [
     imgPath: "/images/exp2.png",
     logoPath: "/images/kamedainfologics_logo.jpg",
     title: "Software Developer",
-    date: "June 2020 - December 2023",
+    date: "February  2021 - December 2021",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
       "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
@@ -43,9 +43,9 @@ const expCards: ExperienceCard[] = [
   {
     companyBrief: "Ust Global Pvt Ltd ",
     imgPath: "/images/exp2.png",
-    logoPath: "/images/ust_logo.svg",
+    logoPath: "/images/UST_Logo.svg",
     title: "Software Developer",
-    date: "June 2020 - December 2023",
+    date: "October  2018 - December 2021",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
       "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
@@ -58,7 +58,7 @@ const expCards: ExperienceCard[] = [
     imgPath: "/images/exp2.png",
     logoPath: "/images/neoito-logo.png",
     title: "Software Developer",
-    date: "June 2020 - December 2023",
+    date: "June 2017 - June 2018",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
       "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",

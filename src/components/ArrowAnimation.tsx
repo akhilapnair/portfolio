@@ -32,7 +32,7 @@ const ArrowAnimation = () => {
         tl.to('#banner-arrow-svg', {
             duration: 0.5,
             delay: 0.5,
-            fill: '#ffffff08',
+            fill: '#29383eff',
         });
         tl.to('#banner-arrow-svg', {
             duration: 1,
@@ -52,7 +52,7 @@ const ArrowAnimation = () => {
             viewBox="0 0 376 111"
             fill="transparent"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute bottom-20 left-1/2 -translate-x-1/2 z-0"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-0"
             ref={svgRef}
         >
             <path

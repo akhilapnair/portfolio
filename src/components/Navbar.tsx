@@ -1,6 +1,5 @@
-import  { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { cn } from "../lib/utils";
 import APIcon from "./APIcon";
 
@@ -10,16 +9,35 @@ const menuVariants = {
   exit: { x: "100%" },
 };
 
-const Menu = ({ close: any }) => (
+const listVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, x: 30 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring", stiffness: 200, damping: 20 },
+  },
+};
+
+const Menu = ({ close }) => (
   <motion.div
-    className="menu"
+    className="menu bg-neutral-800"
     variants={menuVariants}
     initial="hidden"
     animate="visible"
     exit="exit"
     transition={{ duration: 0.3 }}
     style={{
-          backgroundColor: `color-mix(in lab, rgb(var(--background)) 70%, transparent)`,
       position: "fixed",
       top: 0,
       right: 0,
@@ -30,18 +48,22 @@ const Menu = ({ close: any }) => (
       zIndex: 1000,
     }}
   >
-    <ul style={{ listStyle: "none", padding: 0 }}>
-      <li className="flex justify-end">
-        <button onClick={close} aria-label="Close menu">
-          <X className="w-6 h-6 hover:text-zinc-400" />
-        </button>
-      </li>
-      {["Home", "About", "Services", "Contact"].map((item) => (
-        <li key={item} style={{ padding: "1rem 0", cursor: "pointer" }}>
+    <motion.ul
+      style={{ listStyle: "none", padding: 0 }}
+      variants={listVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      {["Home", "About", "Experience", "Contact"].map((item) => (
+        <motion.li
+          key={item}
+          style={{ padding: "1rem 0", cursor: "pointer" }}
+          variants={itemVariants}
+        >
           {item}
-        </li>
+        </motion.li>
       ))}
-    </ul>
+    </motion.ul>
   </motion.div>
 );
 
@@ -50,7 +72,10 @@ const Navbar = () => {
   const closeMenu = () => setOpen(false);
 
   return (
-    <nav className="fixed  flex items-center justify-between px-14 py-10  text-white relative z-10">
+    <nav
+      className=" fixed top-0 left-0 w-full flex items-center justify-between px-14 py-10 text-white z-[9999] "
+      style={{ isolation: "isolate" }}
+    >
       <div className="flex items-center gap-2">
         <div className="mb-8 transition duration-300 text-white hover:text-oceanSky">
           <APIcon size={60} color="#ffffff" />
@@ -58,8 +83,13 @@ const Navbar = () => {
       </div>
 
       <button
-        className={cn("group size-12 absolute top-8 right-6 md:right-10 z-[2]")}
-        onClick={() => setOpen(!open)}
+        className={cn(
+          "group size-12 absolute top-8 right-6 md:right-10  z-[1100]"
+        )}
+        onClick={() => {
+          console.log("Button clicked, current open:", open);
+          setOpen(!open);
+        }}
       >
         <span
           className={cn(
@@ -80,9 +110,23 @@ const Navbar = () => {
           )}
         ></span>
       </button>
-
       <AnimatePresence>
-        {open && <Menu close={closeMenu} />}
+        {open && (
+          <>
+            {/* Overlay */}
+            <motion.div
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[900]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={closeMenu}
+            />
+
+            {/* Menu */}
+            <Menu close={closeMenu} />
+          </>
+        )}
       </AnimatePresence>
     </nav>
   );

@@ -43,7 +43,7 @@ const expCards: ExperienceCard[] = [
   {
     companyBrief: "Ust Global Pvt Ltd ",
     imgPath: "/images/exp2.png",
-    logoPath: "/images/UST_Logo.svg",
+    logoPath: "/images/UST_Logo.png",
     title: "Software Developer",
     date: "October  2018 - December 2021",
     responsibilities: [
@@ -142,5 +142,6 @@ export const socialImgs = [
 export const GENERAL_INFO = {
   name: "Akhila Prabhakaran Nair",
   email: "nairakhila204@gmail.com",
+  profile_pic: "/images/profile_pic.png",
 };
 export { expCards };

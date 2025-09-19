@@ -10,12 +10,10 @@ const App = () => {
   return (
  
       <div className="relative min-h-screen bg-black overflow-hidden">
-        {/* <div className="absolute inset-0 z-0"> */}
           <ParticleBackground />
-        {/* </div> */}
         <Navbar />
         {/* <main className="relative pt-10 z-10 flex min-h-[calc(100vh-180px)] "> */}
-          <section className=" w-[780px]flex flex-col  px-6 text-white text-center">
+          <section className=" pt-[180px] w-[780px]flex flex-col  px-6 text-white text-center">
             <Intro />
             <Aboutme />
             <Experience />

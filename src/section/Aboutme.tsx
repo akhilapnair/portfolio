@@ -59,7 +59,7 @@ const Aboutme = () => {
           <SectionTitle title="" />
           <DecoderName text="Hi There" className="text-gray-300" />
         </div>
-        <div className="grid grid-cols-2 w-full gap-4">
+        <div className="grid  grid-cols-1 md:grid-cols-2 w-full gap-4">
           <div
             ref={container}
             className="text-lg text-left text-muted-foreground max-w-[450px] space-y-4"
@@ -84,13 +84,13 @@ const Aboutme = () => {
             </p>
           </div>
           <div className="flex justify-center">
-    <img 
-      src={GENERAL_INFO.profile_pic}
-      alt="Profile Picture" 
-      className="rounded-2xl shadow-lg "
-      // transform transition duration-500 hover:scale-105 hover:rotate-1
-    />
-  </div>
+            <img
+              src={GENERAL_INFO.profile_pic}
+              alt="Profile Picture"
+              className="rounded-2xl shadow-lg "
+              // transform transition duration-500 hover:scale-105 hover:rotate-1
+            />
+          </div>
         </div>
       </div>
     </section>

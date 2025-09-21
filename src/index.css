@@ -58,7 +58,7 @@
   }
 
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[34vw] md:left-10 left-5 h-full flex justify-center;
+    @apply absolute top-0 xl:left-[31vw] md:left-10 left-5 h-full flex justify-center;
   }
 
   .timeline {

@@ -18,7 +18,7 @@ const expCards: ExperienceCard[] = [
     companyBrief: "IBS Software Services Pvt Ltd ",
     imgPath: "/images/.jpg",
     logoPath: "/images/IBS_Logo.jpg",
-    title: "Software Developer",
+    title: "Lead Solution Engineer",
     date: "December 2021 - August 2024",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
@@ -31,7 +31,7 @@ const expCards: ExperienceCard[] = [
     companyBrief: "Kameda Infologics Pvt Ltd ",
     imgPath: "/images/exp2.png",
     logoPath: "/images/kamedainfologics_logo.jpg",
-    title: "Software Developer",
+    title: "Senior Software Engineer",
     date: "February  2021 - December 2021",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
@@ -44,7 +44,7 @@ const expCards: ExperienceCard[] = [
     companyBrief: "Ust Global Pvt Ltd ",
     imgPath: "/images/exp2.png",
     logoPath: "/images/UST_Logo.png",
-    title: "Software Developer",
+    title: "Software Engineer",
     date: "October  2018 - December 2021",
     responsibilities: [
       "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",

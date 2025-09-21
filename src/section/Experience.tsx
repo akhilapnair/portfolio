@@ -54,9 +54,9 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="w-full md:mt-4o mt-20 scetion-padding xl:px-0"
+      className="container w-full md:mt-4o mt-20 scetion-padding xl:px-0"
     >
-      <div className="w-full h-full md:px-20 px-5">
+      {/* <div className="w-full h-full md:px-20 px-5"> */}
         <SectionTitle title="My Career Overview" />
         <div className="mt-32 relative">
           <div className="mt-32 relative">
@@ -95,7 +95,7 @@ const Experience = () => {
               ))}
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </section>
   );

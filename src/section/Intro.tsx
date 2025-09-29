@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import DecoderName from "../components/Decoder-text";
 import { useGSAP } from "@gsap/react";
 import ArrowAnimation from "../components/ArrowAnimation";
+import Button from "../components/Button";
 const roles = ["Developer", "Designer", "Creator"];
 
 export default function WipeText() {
@@ -62,15 +63,18 @@ export default function WipeText() {
   }, [index]);
 
   return (
-    <section className="relative overflow-hidden  min-h-[450px]" id="banner">
-      <ArrowAnimation />
-      <header className=" flex flex-col items-start justify-center  ml-[20vw] px-2 sm:px-4 text-left max-w-4xl ">
-        <div className="min-h-[450px]">
+    <>
+      <section
+        className="container relative overflow-hidden mt-25 min-h-[500px]"
+        id="banner"
+      >
+        <ArrowAnimation />
+        <div className=" flex flex-col items-start justify-center  pl-[20vw] px-2 sm:px-4 text-left max-w-4xl ">
+          {/* <div className="min-h-[450px]"> */}
           <DecoderName
             text="Akhila Prabhakarn Nair"
             className="text-gray-300"
           />
-
           <h2 className="text-5xl sm:text-8xl font-extrabold leading-tight">
             <div className="title-text">
               <span>Frontend</span>
@@ -89,8 +93,19 @@ export default function WipeText() {
               </div>
             </div>
           </h2>
+           <div className="flex justify-start pt-8">
+          <Button text="Resume" className="h-12 px-6" targetId="counter" />
         </div>
-      </header>
-    </section>
+
+        </div>
+        {/* <Button
+          text="See My Work"
+          className="md:w-40 md:h-16 w-40 h-12"
+          id="counter"
+        /> */}
+       
+        {/* </div> */}
+      </section>
+    </>
   );
 }

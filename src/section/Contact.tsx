@@ -1,9 +1,10 @@
 import { GENERAL_INFO, socialImgs } from "../constants";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import SectionTitle from "../components/SectionTitle";
 
 const Contact = () => {
-   const formRef = useRef(null);
+  const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -11,12 +12,12 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setLoading(true); // Show loading state
 
@@ -65,13 +66,15 @@ const Contact = () => {
     //     </div>
     //   </div>
     // </footer>
-     <section id="contact" className="flex-center section-padding  pointer-events-auto">
-      <div className="w-full h-full md:px-10 px-5">
+    <section
+      id="contact"
+      className="flex-center container mt-20 pointer-events-auto"
+    >
+      <SectionTitle title="Contact" className="mb-20" />
 
+      <div className="w-full h-full md:px-10 px-5">
         <div className="grid grid-cols-1 xl:grid-cols-10 gap-4 mt-16">
-          <div className="xl:col-span-4">
-            
-          </div>
+          <div className="xl:col-span-4"></div>
           <div className="xl:col-span-6 min-h-96">
             <div className="flex-center card-border rounded-xl p-10">
               <form

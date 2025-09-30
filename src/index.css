@@ -29,9 +29,7 @@
   .section-padding {
     @apply px-5 md:px-10 md:mt-40 mt-20;
   }
-  .user-badge {
-    /* @apply black200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap; */
-  }
+ 
 
   .cta-wrapper {
     @apply inline-block relative z-20; 
@@ -59,7 +57,7 @@
 
   .text {
     @apply uppercase md:text-lg text-black transition-all duration-500
-         group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+         group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5 pl-2;
   }
 
   .card-border {
@@ -73,10 +71,10 @@
     @apply bg-gray-900 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
-  .text {
+  /* .text {
     @apply uppercase md:text-lg text-black transition-all duration-500
         group-hover:bg-white group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
-  }
+  } */
 
   .card-border {
     @apply border border-black-50 bg-black-100;

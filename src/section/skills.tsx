@@ -57,7 +57,7 @@ const Skills = () => {
   );
 
   return (
-    <section id="my-stack" ref={containerRef} className="container space-y-16">
+    <section id="my-stack" ref={containerRef} className="container mt-20">
         <SectionTitle title="My Stack" className="mb-20" />
         <div className="w-full flex flex-row flex-wrap justify-between items-center gap-8">
           {MY_STACK

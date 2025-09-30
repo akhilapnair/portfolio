@@ -7,10 +7,13 @@ import { expCards } from "../constants";
 import GlowCard from "../components/GlowCard";
 import type { ExperienceCard } from "../types/Experience-card";
 import SectionTitle from "../components/SectionTitle";
+import { useRef } from "react";
 
 const Experience = () => {
+  const textRef = useRef(null);
+
   useGSAP(() => {
-    gsap.utils.toArray(".timeline-card").forEach((card: any) => {
+    gsap.utils.toArray(".company").forEach((card: any) => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
@@ -50,51 +53,51 @@ const Experience = () => {
         },
       });
     }, "<");
+
   }, []);
   return (
     <section
       id="experience"
-      className="container w-full md:mt-4o mt-20 scetion-padding xl:px-0"
+      className="container w-full md:mt-4o mt-20  xl:px-0"
     >
-      {/* <div className="w-full h-full md:px-20 px-5"> */}
-        <SectionTitle title="My Career Overview" />
+      <SectionTitle title="My Career Overview" />
+      <div className="mt-32 relative">
         <div className="mt-32 relative">
-          <div className="mt-32 relative">
-            <div className="relative z-50 xl:space-y-10 ">
-              {expCards.map((card: ExperienceCard, index: number) => (
-                <div key={card.title} className="exp-card-wrapper">
-                  <div className="xl:w-2/6">
-                    <p className="text-white-50 text-lg">{card.companyBrief}</p>
-                  </div>
-                  <div className="xl:w-4/6">
-                    <div className="flex items-start">
-                      <div className="timeline-wrapper">
-                        <div className="timeline" />
-                        <div className="gradient-line w-1 h-full" />
+          <div className="relative z-50 xl:space-y-10 ">
+            {expCards.map((card: ExperienceCard, index: number) => (
+              <div key={card.title} className="exp-card-wrapper">
+                <div className="xl:w-2/6 company">
+                  <p ref={textRef} className="text-white-50 text-lg">
+                    {card.companyBrief}
+                  </p>
+                </div>
+                <div className="xl:w-4/6">
+                  <div className="flex items-start">
+                    <div className="timeline-wrapper">
+                      <div className="timeline" />
+                      <div className="gradient-line w-1 h-full" />
+                    </div>
+                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                      <div className="timeline-logo w-22 h-22 p-2 rounded-full bg-black">
+                        <img
+                          src={card.logoPath}
+                          className="rounded-full w-full h-full object-cover"
+                          alt="logo"
+                        />
                       </div>
-                      <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                        <div className="timeline-logo w-22 h-22 p-2 rounded-full bg-black">
-                          <img
-                            src={card.logoPath}
-                            className="rounded-full w-full h-full object-cover"
-                            alt="logo"
-                          />
-                        </div>
-                        <div>
-                          <h1 className="font-semibold text-3xl">
-                            {card.title}
-                          </h1>
-                          <p className="my-5 text-white-50">
-                            🗓️&nbsp;{card.date}
-                          </p>
-                        </div>
+                      <div>
+                        <h1 className="font-semibold text-3xl">{card.title}</h1>
+                        <p className="my-5 text-white-50">
+                          🗓️&nbsp;{card.date}
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
+        </div>
         {/* </div> */}
       </div>
     </section>

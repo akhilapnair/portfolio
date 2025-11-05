@@ -28,6 +28,10 @@ const itemVariants: Variants = {
     transition: { type: "spring", stiffness: 200, damping: 20 },
   },
 };
+ const scrollToSection = (section:any) => {
+  console.log("Scrolling to section:", section);
+    section[section].current.scrollIntoView({ behavior: "smooth" });
+  };
 
 const Menu = ({ close }) => (
   <motion.div
@@ -54,11 +58,12 @@ const Menu = ({ close }) => (
       initial="hidden"
       animate="visible"
     >
-      {["Home", "About", "Experience", "Contact"].map((item) => (
+      {["Home", "About", "Experience","Skills","Contact"].map((item) => (
         <motion.li
           key={item}
           style={{ padding: "1rem 0", cursor: "pointer" }}
           variants={itemVariants}
+          onClick={() => scrollToSection(item)}
         >
           {item}
         </motion.li>
@@ -70,6 +75,7 @@ const Menu = ({ close }) => (
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const closeMenu = () => setOpen(false);
+
 
   return (
     <nav

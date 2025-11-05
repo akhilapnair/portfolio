@@ -53,7 +53,6 @@ const Experience = () => {
         },
       });
     }, "<");
-
   }, []);
   return (
     <section
@@ -69,6 +68,8 @@ const Experience = () => {
                 <div className="xl:w-2/6 company">
                   <p ref={textRef} className="text-white-50 text-lg">
                     {card.companyBrief}
+                    <h1 className="font-semibold text-3xl">{card.title}</h1>
+                    <p className="my-5 text-white-50">🗓️&nbsp;{card.date}</p>
                   </p>
                 </div>
                 <div className="xl:w-4/6">
@@ -86,10 +87,18 @@ const Experience = () => {
                         />
                       </div>
                       <div>
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <p className="my-5 text-white-50">
-                          🗓️&nbsp;{card.date}
+                        <p className="text-[#839CB5] italic">
+                          Responsibilities
                         </p>
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                          {card.responsibilities.map(
+                            (responsibility, index) => (
+                              <li key={index} className="text-lg">
+                                {responsibility}
+                              </li>
+                            )
+                          )}
+                        </ul>
                       </div>
                     </div>
                   </div>

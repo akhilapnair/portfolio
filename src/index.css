@@ -47,11 +47,17 @@
 
   .arrow-wrapper {
     @apply w-10 h-10 rounded-full flex items-center justify-center relative overflow-hidden;
+    img {
+        @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce;
+      }
+  }
+  .arrow-wrapper:hover img {
+    @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce translate-y-0 transition-all duration-500
   }
 
   .bg-circle {
     @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
-        w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
+        w-[120%] h-[120%] group-hover:size-10 group-hover:right-6
         rounded-full bg-white transition-all duration-500;
   }
 
@@ -61,7 +67,7 @@
   }
 
   .card-border {
-    @apply border border-black-50 bg-black-100;
+    @apply border border-black-50 bg-balck-200;
   }
 
   .exp-card-wrapper {
@@ -76,9 +82,7 @@
         group-hover:bg-white group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
   } */
 
-  .card-border {
-    @apply border border-black-50 bg-black-100;
-  }
+ 
 
   .timeline-wrapper {
     @apply absolute top-0 xl:left-[31vw] md:left-10 left-5 h-full flex justify-center;

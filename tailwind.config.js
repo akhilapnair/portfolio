@@ -8,6 +8,7 @@ export default {
         lightgrey: "color-mix(in lab, var(--text) 60%, transparent)",
         "black-50": "#1c1c21",
         "black-100": "#282732",
+        "balck-200": "#0E0E10",
       },
       fontFamily: {
         sans: [

@@ -66,11 +66,12 @@ const Experience = () => {
             {expCards.map((card: ExperienceCard, index: number) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6 company">
-                  <p ref={textRef} className="text-white-50 text-lg">
-                    {card.companyBrief}
-                    <h1 className="font-semibold text-3xl">{card.title}</h1>
-                    <p className="my-5 text-white-50">🗓️&nbsp;{card.date}</p>
-                  </p>
+                  <GlowCard card={card}>
+                 
+                    <h6 className="font-semibold text-lg">💼&nbsp;{card.title}</h6>
+                    <p className="mb-5 text-white-50">🗓️&nbsp;{card.date}</p>
+                    {/* </p> */}
+                  </GlowCard>
                 </div>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
@@ -86,7 +87,8 @@ const Experience = () => {
                           alt="logo"
                         />
                       </div>
-                      <div>
+                      <div className="text-left">
+                        <h3 className="font-semibold text-3xl">{card.title}</h3>
                         <p className="text-[#839CB5] italic">
                           Responsibilities
                         </p>

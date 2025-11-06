@@ -8,10 +8,9 @@ const expCards: ExperienceCard[] = [
     title: "Full Stack Developer",
     date: "December 2023 - May 2024",
     responsibilities: [
-      "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
-      "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
-      "built scalable APIs and managed data using Node.js and MySQL.",
-      " To ensure reliability, I wrote unit tests with Jest, contributing to a production-ready system that supported the product’s timely certification and launch.",
+      " Contributed to the development of a doctor’s dashboard for a medical respiratory analyzer device.",
+      "Built key UI features using React.js, TypeScript, and Tailwind CSS, ensuring usability and performance.",
+      "Developed scalable REST APIs with Node.js & MySQL for secure clinical data management.",
     ],
   },
   {
@@ -21,10 +20,11 @@ const expCards: ExperienceCard[] = [
     title: "Lead Solution Engineer",
     date: "December 2021 - August 2024",
     responsibilities: [
-      "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
-      "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
-      "built scalable APIs and managed data using Node.js and MySQL.",
-      " To ensure reliability, I wrote unit tests with Jest, contributing to a production-ready system that supported the product’s timely certification and launch.",
+      "Led development of large-scale enterprise web applications for aviation and logistics clients.",
+      "Architected and maintained a micro-frontend monorepo using Nx for scalable development.",
+      "Built applications using Angular 13+, TypeScript, HTML5, Angular Material, and reusable shared libraries.",
+      "Implemented NGXS state management, improving maintainability and performance.",
+      "Collaborated with cross-functional teams and stakeholders to ensure delivery aligned with business goals.",
     ],
   },
   {
@@ -34,10 +34,11 @@ const expCards: ExperienceCard[] = [
     title: "Senior Software Engineer",
     date: "February  2021 - December 2021",
     responsibilities: [
-      "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
-      "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
-      "built scalable APIs and managed data using Node.js and MySQL.",
-      " To ensure reliability, I wrote unit tests with Jest, contributing to a production-ready system that supported the product’s timely certification and launch.",
+      "Led a UI team to enhance and modernize the YASASII healthcare application modules.",
+      "Migrated the system from Angular 9 to Angular 11, improving performance and maintainability.",
+      "Implemented reusable UI components within a monorepo architecture.",
+      "Conducted code reviews and mentored junior developers to improve code quality and efficiency.",
+      "Built responsive UIs with Angular, Bootstrap, CSS3, JavaScript, and Sass.",
     ],
   },
   {
@@ -47,10 +48,11 @@ const expCards: ExperienceCard[] = [
     title: "Software Engineer",
     date: "October  2018 - December 2021",
     responsibilities: [
-      "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
-      "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
-      "built scalable APIs and managed data using Node.js and MySQL.",
-      " To ensure reliability, I wrote unit tests with Jest, contributing to a production-ready system that supported the product’s timely certification and launch.",
+      " Worked on modernization of legacy enterprise applications for a banking client.",
+      "Migrated a large application from Angular 6 to Angular 11, improving performance and maintainability.",
+      "Developed UI features using Angular, Bootstrap, CSS3, and JavaScript.",
+      "Built and integrated REST APIs and delivered an MVP using D3.js for data visualizations.",
+      "The MVP launch successfully led to additional project funding and extended engagement.",
     ],
   },
   {
@@ -60,10 +62,10 @@ const expCards: ExperienceCard[] = [
     title: "Software Developer",
     date: "June 2017 - June 2018",
     responsibilities: [
-      "The company required a secure, user-friendly doctor’s dashboard to manage clinical data efficiently",
-      "developed and integrated core features for the doctor's dashboard using React.js, Tailwind CSS, and TypeScript for a modern, responsive UI. ",
-      "built scalable APIs and managed data using Node.js and MySQL.",
-      " To ensure reliability, I wrote unit tests with Jest, contributing to a production-ready system that supported the product’s timely certification and launch.",
+      " Contributed to Databot.io, a Business Intelligence platform enabling data-driven decision making.",
+      "Developed UI components using Angular 5 and Material Design principles.",
+      "Supported re-engineering of PropertyOK using Redux architecture to improve performance.",
+      "Collaborated in a fast-paced startup environment, helping deliver high-quality product iterations.",
     ],
   },
 ];
@@ -151,8 +153,7 @@ const navLinks = [
   {
     name: "Skills",
     link: "#skills",
-  }
- 
+  },
 ];
 export const GENERAL_INFO = {
   name: "Akhila Prabhakaran Nair",

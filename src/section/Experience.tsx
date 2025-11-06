@@ -65,11 +65,11 @@ const Experience = () => {
           <div className="relative z-50 xl:space-y-10 ">
             {expCards.map((card: ExperienceCard, index: number) => (
               <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-2/6 company">
+                <div className="xl:w-2/6 company text-left">
                   <GlowCard card={card}>
                  
-                    <h6 className="font-semibold text-lg">💼&nbsp;{card.title}</h6>
-                    <p className="mb-5 text-white-50">🗓️&nbsp;{card.date}</p>
+                    <h6 className="font-medium text-base text-gray-300">💼&nbsp;{card.title}</h6>
+                    <p className="text-sm text-gray-500 mb-4 ">🗓️&nbsp;{card.date}</p>
                     {/* </p> */}
                   </GlowCard>
                 </div>
@@ -89,7 +89,7 @@ const Experience = () => {
                       </div>
                       <div className="text-left">
                         <h3 className="font-semibold text-3xl">{card.title}</h3>
-                        <p className="text-[#839CB5] italic">
+                        <p className="text-[#839CB5] italic my-3">
                           Responsibilities
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">

@@ -85,7 +85,7 @@ export const MY_STACK = [
   },
   {
     name: "Angular",
-    icon: "/logo/next.png",
+    icon: "/logo/angular.png",
   },
   {
     name: "Redux",
@@ -124,20 +124,20 @@ export const MY_STACK = [
 
 export const socialImgs = [
   {
+    name: "Git",
+    imgPath: "/images/github.png",
+  },
+  {
+    name: "linkedin",
+    imgPath: "/images/linkedin.png",
+  },
+  {
     name: "insta",
     imgPath: "/images/insta.png",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
   },
 ];
 

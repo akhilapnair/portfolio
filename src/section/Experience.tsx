@@ -1,16 +1,12 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import TitleHeader from "../components/TitleHeader";
 import { expCards } from "../constants";
 import GlowCard from "../components/GlowCard";
 import type { ExperienceCard } from "../types/Experience-card";
 import SectionTitle from "../components/SectionTitle";
-import { useRef } from "react";
 
 const Experience = () => {
-  const textRef = useRef(null);
 
   useGSAP(() => {
     gsap.utils.toArray(".company").forEach((card: any) => {
@@ -32,7 +28,7 @@ const Experience = () => {
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
-        end: "70% center",
+        end: "80% center",
         onUpdate: (self) => {
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,

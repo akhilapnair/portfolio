@@ -29,8 +29,9 @@ const itemVariants: Variants = {
   },
 };
  const scrollToSection = (section:any) => {
-  console.log("Scrolling to section:", section);
-    section[section].current.scrollIntoView({ behavior: "smooth" });
+  console.log("Requested scroll to section:", section);
+    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    // setOpen(!open);
   };
 
 const Menu = ({ close }) => (

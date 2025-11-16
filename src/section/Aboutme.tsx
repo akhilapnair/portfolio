@@ -51,13 +51,13 @@ const Aboutme = () => {
 
   return (
     <section
-      id="about-me"
+      id="About"
       className="w-full md:mt-40 mt-20 section-padding xl:px-0"
     >
       <div className="container flex items-start space-y-4 flex-col md:col-span-7">
         <div className="flex items-start">
-          <SectionTitle title="" />
-          <DecoderName text="Hi There" className="text-gray-300" />
+          <SectionTitle title="HI THERE" />
+          {/* <DecoderName text="Hi There" className="text-gray-300" /> */}
         </div>
         <div className="grid  grid-cols-1 md:grid-cols-2 w-full gap-4">
           <div
@@ -88,7 +88,6 @@ const Aboutme = () => {
               src={GENERAL_INFO.profile_pic}
               alt="Profile Picture"
               className="rounded-2xl shadow-lg "
-              // transform transition duration-500 hover:scale-105 hover:rotate-1
             />
           </div>
         </div>

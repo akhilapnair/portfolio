@@ -56,7 +56,7 @@ const Experience = () => {
   }, []);
   return (
     <section
-      id="experience"
+      id="Experience"
       className="container w-full md:mt-4o mt-20  xl:px-0"
     >
       <SectionTitle title="My Career Overview" />

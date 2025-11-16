@@ -1,16 +1,12 @@
 const Button = ({ text, className, id }: any) => {
   return (
-     <a
+    <a
       onClick={(e) => {
         e.preventDefault();
-        const target = document.getElementById("counter");
-        if (target && id) {
-          const offset = window.innerHeight * 0.15;
-          const top =
-            target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-          window.scrollTo({ top, behavior: "smooth" });
-        }
+        window.open(
+          "https://docs.google.com/document/d/1ZChqu2rURWHLGZM7-yJEWloSFJmsZzbv/edit?usp=sharing&ouid=105486007470840248750&rtpof=true&sd=true",
+          "_blank"
+        );
       }}
       className="cta-wrapper"
     >

@@ -6,11 +6,9 @@ import TitleHeader from "../components/TitleHeader";
 const Contact = () => {
   return (
     <section
-      id="contact"
+      id="Contact"
       className="flex-center container mt-20 pointer-events-auto"
     >
-      {/* <SectionTitle title="Contact" className="mb-20" /> */}
-
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title=" "

@@ -62,7 +62,7 @@ const Experience = () => {
             {expCards.map((card: ExperienceCard, index: number) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6 company text-left">
-                  <GlowCard card={card}>
+                  <GlowCard card={card} index={index}>
                  
                     <h6 className="font-medium text-base text-gray-300">💼&nbsp;{card.title}</h6>
                     <p className="text-sm text-gray-500 mb-4 ">🗓️&nbsp;{card.date}</p>

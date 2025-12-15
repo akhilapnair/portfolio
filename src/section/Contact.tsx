@@ -1,6 +1,5 @@
 import { GENERAL_INFO, socialImgs } from "../constants";
 // import { socialImgs } from "../constants";
-;
 import TitleHeader from "../components/TitleHeader";
 
 const Contact = () => {
@@ -35,7 +34,6 @@ const Contact = () => {
               className="leading-none text-gray-500 hover:underline hover:text-white"
             >
               Design & built by Akhila Prabhakaran Nair
-              
             </a>
           </div>
         </div>

@@ -141,20 +141,20 @@ export const socialImgs = [
   },
 ];
 
-const navLinks = [
-  {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-];
+// const navLinks = [
+//   {
+//     name: "Work",
+//     link: "#work",
+//   },
+//   {
+//     name: "Experience",
+//     link: "#experience",
+//   },
+//   {
+//     name: "Skills",
+//     link: "#skills",
+//   },
+// ];
 export const GENERAL_INFO = {
   name: "Akhila Prabhakaran Nair",
   email: "nairakhila204@gmail.com",

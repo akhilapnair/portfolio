@@ -28,13 +28,13 @@ const itemVariants: Variants = {
     transition: { type: "spring", stiffness: 200, damping: 20 },
   },
 };
- const scrollToSection = (section:any) => {
-  console.log("Requested scroll to section:", section);
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
-    // setOpen(!open);
-  };
 
-const Menu = ({ close }) => (
+type MenuProps = {
+  close: () => void;
+  scrollToSection: (section: string) => void;
+};
+
+const Menu = ({ scrollToSection }: MenuProps) => (
   <motion.div
     className="menu bg-neutral-800"
     variants={menuVariants}
@@ -59,7 +59,7 @@ const Menu = ({ close }) => (
       initial="hidden"
       animate="visible"
     >
-      {["Home", "About", "Experience","Skills","Contact"].map((item) => (
+      {["Home", "About", "Experience", "Skills", "Contact"].map((item) => (
         <motion.li
           key={item}
           style={{ padding: "1rem 0", cursor: "pointer" }}
@@ -76,7 +76,11 @@ const Menu = ({ close }) => (
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const closeMenu = () => setOpen(false);
-
+  const scrollToSection = (section: any) => {
+    console.log("Requested scroll to section:", section);
+    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    closeMenu();
+  };
 
   return (
     <nav
@@ -85,7 +89,7 @@ const Navbar = () => {
     >
       <div className="flex items-center gap-2">
         <div className="mb-8 transition duration-300 text-white hover:text-oceanSky">
-          <APIcon size={60} color="#ffffff" />
+          <APIcon size={60} />
         </div>
       </div>
 
@@ -131,7 +135,7 @@ const Navbar = () => {
             />
 
             {/* Menu */}
-            <Menu close={closeMenu} />
+            <Menu close={closeMenu} scrollToSection={scrollToSection} />
           </>
         )}
       </AnimatePresence>

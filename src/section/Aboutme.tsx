@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import DecoderName from "../components/Decoder-text";
 import SectionTitle from "../components/SectionTitle";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

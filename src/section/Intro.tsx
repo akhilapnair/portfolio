@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { motion } from "framer-motion";
 import DecoderName from "../components/Decoder-text";
 import { useGSAP } from "@gsap/react";
 import ArrowAnimation from "../components/ArrowAnimation";

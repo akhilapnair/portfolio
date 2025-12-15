@@ -50,7 +50,7 @@ container.innerHTML = ' ';
 
     const render = () => {
       const content = output.current
-        .map((item, i) => {
+        .map((item) => {
           const className =
             item.type === CharType.Value ? "uppercase tracking-wider font-semibold text-gray-300 " : "text-oceanSky";
           return `<span class="${className}">${item.value}</span>`;

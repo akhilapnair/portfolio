@@ -1,4 +1,4 @@
-const Button = ({ text, className, id }: any) => {
+const Button = ({ text, className}: any) => {
   return (
     <a
       onClick={(e) => {

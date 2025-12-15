@@ -1,6 +1,5 @@
-import React from 'react';
 
-const APIcon = ({ size = 64, color = "white", className = "" }) => (
+const APIcon = ({ size = 64, className = "" }) => (
   <svg
   className={className}
     width={size}

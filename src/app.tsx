@@ -4,7 +4,7 @@ import ParticleBackground from "./components/Particle-animation";
 import Aboutme from "./section/Aboutme";
 import Experience from "./section/Experience";
 import Skills from "./section/skills";
-import Contact from "./section/contact";
+import Contact from "./section/Contact";
 
 const App = () => {
   return (

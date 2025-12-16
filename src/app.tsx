@@ -1,6 +1,6 @@
 import Intro from "./section/Intro";
 import Navbar from "./components/Navbar";
-import ParticleBackground from "./components/Particle-animation";
+import ParticleBackground from "./components/ParticleAnimation";
 import Aboutme from "./section/Aboutme";
 import Experience from "./section/Experience";
 import Skills from "./section/skills";

@@ -11,11 +11,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-    "homepage": "https://akhilapnair.github.io/portfolio",
+  "homepage": "https://akhilapnair.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
-    "@react-three/drei": "^10.1.2",
+    "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^9.1.2",
     "@react-three/postprocessing": "^3.0.4",
     "clsx": "^2.1.1",

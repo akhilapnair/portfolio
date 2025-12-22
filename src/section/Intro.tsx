@@ -68,8 +68,7 @@ export default function WipeText() {
         id="banner"
       >
         <ArrowAnimation />
-        <div className=" flex flex-col items-start justify-center  pl-[20vw] px-2 sm:px-4 text-left max-w-4xl ">
-          {/* <div className="min-h-[450px]"> */}
+        <div className=" flex flex-col items-start justify-center  px-2 sm:px-4 text-left max-w-4xl ">
           <DecoderName
             text="Akhila Prabhakarn Nair"
             className="text-gray-300"

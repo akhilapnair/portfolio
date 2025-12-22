@@ -51,7 +51,7 @@ const Aboutme = () => {
   return (
     <section
       id="About"
-      className="w-full md:mt-40 mt-20 section-padding xl:px-0"
+      className="w-full md:mt-40 mt-20  xl:px-0"
     >
       <div className="container flex items-start space-y-4 flex-col md:col-span-7">
         <div className="flex items-start">

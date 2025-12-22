@@ -20,7 +20,7 @@ const SectionTitle = ({ icon, title, className, classNames }: Props) => {
                 ${classNames?.container}
             `}
     >
-      {icon ? (
+      {/* {icon ? (
         icon
       ) : (
         <SectionFlower
@@ -30,7 +30,7 @@ const SectionTitle = ({ icon, title, className, classNames }: Props) => {
                         classNames?.icon}
                     `}
         />
-      )}
+      )} */}
       <h2
         className={`{text-xl uppercase leading-none'
                     ${classNames?.title}

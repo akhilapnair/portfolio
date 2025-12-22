@@ -61,7 +61,7 @@ const Experience = () => {
           <div className="relative z-50 xl:space-y-10 ">
             {expCards.map((card: ExperienceCard, index: number) => (
               <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-2/6 company text-left">
+                <div className="xl:w-1/4 company text-left">
                   <GlowCard card={card} index={index}>
                  
                     <h6 className="font-medium text-base text-gray-300">💼&nbsp;{card.title}</h6>
@@ -75,7 +75,7 @@ const Experience = () => {
                       <div className="timeline" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                    <div className="expText flex xl:gap-10 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo w-22 h-22 p-2 rounded-full bg-black">
                         <img
                           src={card.logoPath}
@@ -84,14 +84,14 @@ const Experience = () => {
                         />
                       </div>
                       <div className="text-left">
-                        <h3 className="font-semibold text-3xl">{card.title}</h3>
+                        <h3 className="font-semibold text-xl">{card.title}</h3>
                         <p className="text-[#839CB5] italic my-3">
                           Responsibilities
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                           {card.responsibilities.map(
                             (responsibility, index) => (
-                              <li key={index} className="text-lg">
+                              <li key={index} className="text-sm">
                                 {responsibility}
                               </li>
                             )

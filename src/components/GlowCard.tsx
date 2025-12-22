@@ -29,7 +29,7 @@ const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
     >
       <div className="glow"></div>
       <div className="mb-5">
-        <h3 className="text-white-50 text-2xl">{card.companyBrief}</h3>
+        <h3 className="text-white-50 text-xl">{card.companyBrief}</h3>
       </div>
       {children}
     </div>

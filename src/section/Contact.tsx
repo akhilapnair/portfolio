@@ -1,5 +1,4 @@
 import { GENERAL_INFO, socialImgs } from "../constants";
-// import { socialImgs } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 
 const Contact = () => {
@@ -22,7 +21,7 @@ const Contact = () => {
           </a>
           <div className="socials">
             {socialImgs.map((socialImg, index) => (
-              <div key={index} className="icon">
+              <div key={index} className="icon" >
                 <img src={socialImg.imgPath} alt="social icon" />
               </div>
             ))}

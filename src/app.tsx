@@ -12,15 +12,13 @@ const App = () => {
       <div className="relative min-h-screen bg-black overflow-hidden">
           <ParticleBackground />
         <Navbar />
-        {/* <main className="relative pt-10 z-10 flex min-h-[calc(100vh-180px)] "> */}
-          <section className=" pt-[180px] w-[780px]flex flex-col  px-6 text-white text-center">
+          <section className=" pt-[180px] w-[780px]flex flex-col  px-3 text-white text-center">
             <Intro />
             <Aboutme />
             <Experience />
             <Skills />
             <Contact />
           </section>
-        {/* </main> */}
       </div>
   );
 };

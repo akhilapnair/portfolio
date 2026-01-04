@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import DecoderName from "../components/Decoder-text";
 import { useGSAP } from "@gsap/react";
@@ -91,18 +91,10 @@ export default function WipeText() {
               </div>
             </div>
           </h2>
-           <div className="flex justify-start pt-8">
-          <Button text="Resume" className="h-12 px-6" targetId="counter" />
+          <div className="flex justify-start pt-8">
+            <Button text="Resume" className="h-12 px-6" targetId="counter" />
+          </div>
         </div>
-
-        </div>
-        {/* <Button
-          text="See My Work"
-          className="md:w-40 md:h-16 w-40 h-12"
-          id="counter"
-        /> */}
-       
-        {/* </div> */}
       </section>
     </>
   );

@@ -9,7 +9,7 @@ import SectionTitle from "../components/SectionTitle";
 const Experience = () => {
 
   useGSAP(() => {
-    gsap.utils.toArray(".company").forEach((card: any) => {
+    gsap.utils.toArray(".timeline-card").forEach((card: any) => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
@@ -57,16 +57,14 @@ const Experience = () => {
     >
       <SectionTitle title="My Career Overview" />
       <div className="mt-32 relative">
-        <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-10 ">
             {expCards.map((card: ExperienceCard, index: number) => (
-              <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-1/4 company text-left">
+              <div key={card.title} className="exp-card-wrapper ">
+                <div className="xl:w-1/4 text-left">
                   <GlowCard card={card} index={index}>
                  
                     <h6 className="font-medium text-base text-gray-300">💼&nbsp;{card.title}</h6>
                     <p className="text-sm text-gray-500 mb-4 ">🗓️&nbsp;{card.date}</p>
-                    {/* </p> */}
                   </GlowCard>
                 </div>
                 <div className="xl:w-4/6">
@@ -104,8 +102,6 @@ const Experience = () => {
               </div>
             ))}
           </div>
-        </div>
-        {/* </div> */}
       </div>
     </section>
   );

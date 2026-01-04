@@ -14,7 +14,7 @@ const expCards: ExperienceCard[] = [
     ],
   },
   {
-    companyBrief: "IBS Software Services Pvt Ltd ",
+    companyBrief: "IBS Software Services ",
     imgPath: "/images/.jpg",
     logoPath: "/images/IBS_Logo.jpg",
     title: "Lead Solution Engineer",
@@ -28,7 +28,7 @@ const expCards: ExperienceCard[] = [
     ],
   },
   {
-    companyBrief: "Kameda Infologics Pvt Ltd ",
+    companyBrief: "Kameda Infologics ",
     imgPath: "/images/exp2.png",
     logoPath: "/images/kamedainfologics_logo.jpg",
     title: "Senior Software Engineer",
@@ -42,7 +42,7 @@ const expCards: ExperienceCard[] = [
     ],
   },
   {
-    companyBrief: "Ust Global Pvt Ltd ",
+    companyBrief: "Ust Global ",
     imgPath: "/images/exp2.png",
     logoPath: "/images/UST_Logo.png",
     title: "Software Engineer",
@@ -56,7 +56,7 @@ const expCards: ExperienceCard[] = [
     ],
   },
   {
-    companyBrief: "Neoito Technologies Pvt Ltd ",
+    companyBrief: "Neoito Technologies ",
     imgPath: "/images/exp2.png",
     logoPath: "/images/neoito-logo.png",
     title: "Software Developer",
@@ -65,7 +65,6 @@ const expCards: ExperienceCard[] = [
       " Contributed to Databot.io, a Business Intelligence platform enabling data-driven decision making.",
       "Developed UI components using Angular 5 and Material Design principles.",
       "Supported re-engineering of PropertyOK using Redux architecture to improve performance.",
-      // "Collaborated in a fast-paced startup environment, helping deliver high-quality product iterations.",
     ],
   },
 ];
